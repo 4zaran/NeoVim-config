@@ -3,15 +3,18 @@ return {
     "williamboman/mason.nvim",
     opts = {
       ensure_installed = {
-        -- defaults
-        "stylua",
-        -- "shellcheck",
-        -- "shfmt",
-        -- "flake8",
-        -- custom
+        -- LSP
         "pyright",
         "eslint-lsp",
         "vue-language-server",
+
+        -- linter
+        "djlint",
+        "pylint",
+
+        -- formatter
+        "stylua",
+        -- "autopep8",
       },
     },
   },
