@@ -8,3 +8,12 @@ vim.keymap.set("n", "<leader>sf", "<cmd>lua fuzzyFindFiles{}<cr>", { desc = "Fuz
 
 -- CellularAutomaton
 vim.keymap.set("n", "<leader>cc", "<cmd>CellularAutomaton make_it_rain<CR>", { desc = "Make it rain" })
+
+-- nv-term
+vim.keymap.set("n", "<leader>wh", function()
+  require("nvterm.terminal").new("horizontal")
+  vim.cmd("startinsert")
+end, { desc = "Terminal horizontal" })
+vim.keymap.set("n", "<leader>wv", function()
+  require("nvterm.terminal").new("vertical")
+end, { desc = "Terminal vertical" })
