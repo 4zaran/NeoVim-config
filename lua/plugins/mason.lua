@@ -5,7 +5,7 @@ return {
       ensure_installed = {
         -- LSP
         "pyright",
-        "eslint-lsp",
+        -- "eslint-lsp",
         "vue-language-server",
 
         -- linter
