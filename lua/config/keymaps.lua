@@ -3,11 +3,17 @@
 -- Add any additional keymaps here
 --
 
--- fuzzy search
-vim.keymap.set("n", "<leader>sf", "<cmd>lua fuzzyFindFiles{}<cr>", { desc = "Fuzzy" })
-
 -- CellularAutomaton
 vim.keymap.set("n", "<leader>cc", "<cmd>CellularAutomaton make_it_rain<CR>", { desc = "Make it rain" })
+
+-- diffview
+vim.keymap.set("n", "<leader>gd", "<cmd>DiffviewOpen<cr>", { desc = "Diff current index" })
+vim.keymap.set("n", "<leader>gD", "<cmd>DiffviewOpen rc<cr>", { desc = "Diff rc" })
+vim.keymap.set("n", "<leader>gf", "<cmd>DiffviewFileHistory %<cr>", { desc = "File history" })
+vim.keymap.set("n", "<leader>gx", "<cmd>DiffviewClose <cr>", { desc = "Close Diffview" })
+
+-- fuzzy search
+vim.keymap.set("n", "<leader>sf", "<cmd>lua fuzzyFindFiles{}<cr>", { desc = "Fuzzy" })
 
 -- nv-term
 vim.keymap.set("n", "<leader>wh", function()
@@ -17,9 +23,3 @@ end, { desc = "Terminal horizontal" })
 vim.keymap.set("n", "<leader>wv", function()
   require("nvterm.terminal").new("vertical")
 end, { desc = "Terminal vertical" })
-
--- diffview
-vim.keymap.set("n", "<leader>gr", "<cmd>DiffviewOpen rc<cr>", { desc = "Diff rc" })
-vim.keymap.set("n", "<leader>gd", "<cmd>DiffviewOpen", { desc = "Diff <rev>" })
-vim.keymap.set("n", "<leader>gf", "<cmd>DiffviewFileHistory %<cr>", { desc = "File history" })
-vim.keymap.set("n", "<leader>gx", "<cmd>DiffviewClose <cr>", { desc = "Close Diffview" })
