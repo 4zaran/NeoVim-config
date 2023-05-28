@@ -17,3 +17,9 @@ end, { desc = "Terminal horizontal" })
 vim.keymap.set("n", "<leader>wv", function()
   require("nvterm.terminal").new("vertical")
 end, { desc = "Terminal vertical" })
+
+-- diffview
+vim.keymap.set("n", "<leader>gr", "<cmd>DiffviewOpen rc<cr>", { desc = "Diff rc" })
+vim.keymap.set("n", "<leader>gd", "<cmd>DiffviewOpen", { desc = "Diff <rev>" })
+vim.keymap.set("n", "<leader>gf", "<cmd>DiffviewFileHistory %<cr>", { desc = "File history" })
+vim.keymap.set("n", "<leader>gx", "<cmd>DiffviewClose <cr>", { desc = "Close Diffview" })
