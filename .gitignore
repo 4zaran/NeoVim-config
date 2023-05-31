@@ -12,3 +12,4 @@ doc/tags
 data
 debug
 lazy-lock.json
+lua/plugins/alpha.lua
