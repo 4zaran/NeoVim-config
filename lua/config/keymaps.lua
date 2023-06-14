@@ -26,3 +26,7 @@ end, { desc = "Terminal horizontal" })
 vim.keymap.set("n", "<leader>wv", function()
   require("nvterm.terminal").new("vertical")
 end, { desc = "Terminal vertical" })
+
+-- window close
+vim.keymap.set("n", "<leader>wc", "<cmd>close<cr>", { desc = "Window close" })
+vim.keymap.set("n", "<leader>co", "<cmd>PyrightOrganizeImports<cr>", { desc = "Organize Imports (py)" })
