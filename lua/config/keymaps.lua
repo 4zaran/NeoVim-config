@@ -30,6 +30,9 @@ vim.keymap.set("n", "<leader>wv", function()
   require("nvterm.terminal").new("vertical")
 end, { desc = "Terminal vertical" })
 
+--telescope
+vim.keymap.set("n", "<leader>fm", "<cmd>Telescope media_files<cr>", { desc = "Find media files" })
+
 -- window close
 vim.keymap.set("n", "<leader>wc", "<cmd>close<cr>", { desc = "Window close" })
 vim.keymap.set("n", "<leader>co", "<cmd>PyrightOrganizeImports<cr>", { desc = "Organize Imports (py)" })
