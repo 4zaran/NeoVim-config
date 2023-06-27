@@ -32,6 +32,8 @@ end, { desc = "Terminal vertical" })
 
 -- terminal exit
 vim.keymap.set("t", "<Esc>", "<C-\\><C-n>", { desc = "Window close" })
+--telescope
+vim.keymap.set("n", "<leader>fm", "<cmd>Telescope media_files<cr>", { desc = "Find media files" })
 
 -- window close
 vim.keymap.set("n", "<leader>wc", "<cmd>close<cr>", { desc = "Window close" })
