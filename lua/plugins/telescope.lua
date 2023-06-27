@@ -8,5 +8,9 @@ return {
         require("telescope").load_extension("fzf")
       end,
     },
+    keys = {
+      { "<leader>fF", vim.NIL },
+      { "<leader>ff", vim.NIL },
+    },
   },
 }
