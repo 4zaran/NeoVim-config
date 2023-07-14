@@ -2,6 +2,8 @@ return {
   {
     "m4xshen/hardtime.nvim",
     event = "VeryLazy",
-    opts = {}
+    opts = {
+      disable_mouse = false,
+    },
   },
 }
